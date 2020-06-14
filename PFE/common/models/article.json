@@ -16,7 +16,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "gammes": {
+      "type": "belongsTo",
+      "model": "Gamme",
+      "foreignKey": "gammeId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

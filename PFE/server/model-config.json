@@ -55,5 +55,9 @@
   "Boutique": {
     "dataSource": "mysql",
     "public": true
+  },
+  "image": {
+    "dataSource": "mysql",
+    "public": true
   }
 }

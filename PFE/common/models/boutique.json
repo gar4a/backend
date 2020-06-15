@@ -16,7 +16,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "commandes": {
+      "type": "hasMany",
+      "model": "Commande",
+      "foreignKey": "boutiqueId"
+    }
+  },
   "acls": [],
   "methods": {}
 }

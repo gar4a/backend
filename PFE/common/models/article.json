@@ -21,6 +21,21 @@
       "type": "belongsTo",
       "model": "Gamme",
       "foreignKey": "gammeId"
+    },
+    "categorie": {
+      "type": "belongsTo",
+      "model": "Categorie",
+      "foreignKey": "categorieId"
+    },
+    "marque": {
+      "type": "belongsTo",
+      "model": "Marque",
+      "foreignKey": "marqueId"
+    },
+    "image": {
+      "type": "belongsTo",
+      "model": "image",
+      "foreignKey": "imageId"
     }
   },
   "acls": [],

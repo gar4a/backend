@@ -21,6 +21,11 @@
       "type": "belongsTo",
       "model": "Boutique",
       "foreignKey": "boutiqueId"
+    },
+    "client": {
+      "type": "belongsTo",
+      "model": "Client",
+      "foreignKey": "commandeId"
     }
   },
   "acls": [],

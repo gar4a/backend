@@ -59,5 +59,9 @@
   "image": {
     "dataSource": "mysql",
     "public": true
+  },
+  "Client": {
+    "dataSource": "mysql",
+    "public": true
   }
 }

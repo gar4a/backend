@@ -17,15 +17,15 @@
   },
   "validations": [],
   "relations": {
+    "paniers": {
+      "type": "hasOne",
+      "model": "Panier",
+      "foreignKey": "PanierId"
+    },
     "boutique": {
       "type": "belongsTo",
       "model": "Boutique",
-      "foreignKey": "boutiqueId"
-    },
-    "client": {
-      "type": "belongsTo",
-      "model": "Client",
-      "foreignKey": "commandeId"
+      "foreignKey": "CommandeId"
     }
   },
   "acls": [],

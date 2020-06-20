@@ -6,36 +6,46 @@
     "validateUpsert": true
   },
   "properties": {
+    "nom": {
+      "type": "string",
+      "required": true
+    },
     "prix": {
       "type": "number",
       "required": true
     },
-    "quantite": {
-      "type": "number",
+    "description": {
+      "type": "string",
       "required": true
     }
   },
   "validations": [],
   "relations": {
-    "gammes": {
+    "gamme": {
       "type": "belongsTo",
       "model": "Gamme",
-      "foreignKey": "gammeId"
+      "foreignKey": "GammeId"
     },
     "categorie": {
       "type": "belongsTo",
       "model": "Categorie",
-      "foreignKey": "categorieId"
+      "foreignKey": "CategorieId"
     },
     "marque": {
       "type": "belongsTo",
       "model": "Marque",
-      "foreignKey": "marqueId"
+      "foreignKey": "MarqueId"
     },
     "image": {
       "type": "belongsTo",
-      "model": "image",
-      "foreignKey": "imageId"
+      "model": "Image",
+      "foreignKey": "ImageId"
+    },
+    "paniers": {
+      "type": "hasMany",
+      "model": "Panier",
+      "foreignKey": "PanierId",
+      "through": "Article_Panier"
     }
   },
   "acls": [],

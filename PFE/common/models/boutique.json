@@ -6,11 +6,11 @@
     "validateUpsert": true
   },
   "properties": {
-    "Adresse": {
+    "nom": {
       "type": "string",
       "required": true
     },
-    "title": {
+    "adresse": {
       "type": "string",
       "required": true
     }
@@ -20,7 +20,7 @@
     "commandes": {
       "type": "hasMany",
       "model": "Commande",
-      "foreignKey": "boutiqueId"
+      "foreignKey": "CommandeId"
     }
   },
   "acls": [],

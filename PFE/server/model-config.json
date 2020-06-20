@@ -32,6 +32,10 @@
     "dataSource": "db",
     "public": false
   },
+  "Article": {
+    "dataSource": "mysql",
+    "public": true
+  },
   "Gamme": {
     "dataSource": "mysql",
     "public": true
@@ -44,7 +48,7 @@
     "dataSource": "mysql",
     "public": true
   },
-  "Article": {
+  "Panier": {
     "dataSource": "mysql",
     "public": true
   },
@@ -56,11 +60,15 @@
     "dataSource": "mysql",
     "public": true
   },
-  "image": {
+  "Article_Panier": {
     "dataSource": "mysql",
     "public": true
   },
-  "Client": {
+  "Personnel": {
+    "dataSource": "mysql",
+    "public": true
+  },
+  "Image": {
     "dataSource": "mysql",
     "public": true
   }

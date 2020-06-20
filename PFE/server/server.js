@@ -1,4 +1,4 @@
-// Copyright IBM Corp. 2016,2019. All Rights Reserved.
+// Copyright IBM Corp. 2016. All Rights Reserved.
 // Node module: loopback-workspace
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
@@ -9,6 +9,9 @@ const loopback = require("loopback");
 const boot = require("loopback-boot");
 
 const app = (module.exports = loopback());
+const fs = require("fs");
+
+fs.mkdirSync("public/images", { recursive: true });
 
 app.start = function () {
   // start the web server
@@ -31,3 +34,5 @@ boot(app, __dirname, function (err) {
   // start the server if `$ node server.js`
   if (require.main === module) app.start();
 });
+
+exports.Models = app.model;

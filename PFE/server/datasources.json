@@ -3,14 +3,21 @@
     "name": "db",
     "connector": "memory"
   },
-  "mysql": {
+  "storage": {
+    "name": "storage",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./server/storage"
+  },
+  "MongoDB": {
     "host": "localhost",
-    "port": 3306,
-    "url": "mysql://root:admin@localhost/myttdb",
-    "database": "myttdb",
-    "password": "admin",
-    "name": "mysql",
-    "user": "root",
-    "connector": "mysql"
+    "port": 27017,
+    "url": "",
+    "database": "DB",
+    "password": "",
+    "name": "MongoDB",
+    "user": "",
+    "useNewUrlParser": true,
+    "connector": "mongodb"
   }
 }

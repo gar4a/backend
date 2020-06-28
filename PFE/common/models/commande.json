@@ -17,15 +17,29 @@
   },
   "validations": [],
   "relations": {
-    "paniers": {
-      "type": "hasOne",
-      "model": "Panier",
-      "foreignKey": "PanierId"
+    "client": {
+      "type": "belongsTo",
+      "model": "Client",
+      "foreignKey": "clientId",
+      "options": {
+        "nestRemoting": true
+      }
     },
     "boutique": {
       "type": "belongsTo",
       "model": "Boutique",
-      "foreignKey": "CommandeId"
+      "foreignKey": "boutiqueId",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "articles": {
+      "type": "hasAndBelongsToMany",
+      "model": "Article",
+      "foreignKey": "articleId",
+      "options": {
+        "nestRemoting": true
+      }
     }
   },
   "acls": [],

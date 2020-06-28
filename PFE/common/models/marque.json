@@ -16,7 +16,10 @@
     "articles": {
       "type": "hasMany",
       "model": "Article",
-      "foreignKey": "MarqueId"
+      "foreignKey": "marqueId",
+      "options": {
+        "nestRemoting": true
+      }
     }
   },
   "acls": [],

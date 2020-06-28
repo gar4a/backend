@@ -33,43 +33,31 @@
     "public": false
   },
   "Article": {
-    "dataSource": "mysql",
+    "dataSource": "MongoDB",
     "public": true
   },
   "Gamme": {
-    "dataSource": "mysql",
+    "dataSource": "MongoDB",
     "public": true
   },
   "Categorie": {
-    "dataSource": "mysql",
+    "dataSource": "MongoDB",
     "public": true
   },
   "Marque": {
-    "dataSource": "mysql",
-    "public": true
-  },
-  "Panier": {
-    "dataSource": "mysql",
+    "dataSource": "MongoDB",
     "public": true
   },
   "Commande": {
-    "dataSource": "mysql",
+    "dataSource": "MongoDB",
     "public": true
   },
   "Boutique": {
-    "dataSource": "mysql",
+    "dataSource": "MongoDB",
     "public": true
   },
-  "Article_Panier": {
-    "dataSource": "mysql",
-    "public": true
-  },
-  "Personnel": {
-    "dataSource": "mysql",
-    "public": true
-  },
-  "Image": {
-    "dataSource": "mysql",
+  "Client": {
+    "dataSource": "MongoDB",
     "public": true
   }
 }

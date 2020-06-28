@@ -20,7 +20,10 @@
     "commandes": {
       "type": "hasMany",
       "model": "Commande",
-      "foreignKey": "CommandeId"
+      "foreignKey": "boutiqueId",
+      "options": {
+        "nestRemoting": true
+      }
     }
   },
   "acls": [],

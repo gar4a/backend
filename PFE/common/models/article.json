@@ -6,16 +6,32 @@
     "validateUpsert": true
   },
   "properties": {
-    "nom": {
+    "title": {
       "type": "string",
       "required": true
     },
-    "prix": {
+    "price": {
       "type": "number",
       "required": true
     },
-    "description": {
+    "brand": {
       "type": "string",
+      "required": true
+    },
+    "das": {
+      "type": "number",
+      "required": true
+    },
+    "images": {
+      "type": "array",
+      "required": true
+    },
+    "description": {
+      "type": "array",
+      "required": true
+    },
+    "stockage": {
+      "type": "array",
       "required": true
     }
   },
@@ -24,28 +40,34 @@
     "gamme": {
       "type": "belongsTo",
       "model": "Gamme",
-      "foreignKey": "GammeId"
+      "foreignKey": "gammeId",
+      "options": {
+        "nestRemoting": true
+      }
     },
     "categorie": {
       "type": "belongsTo",
       "model": "Categorie",
-      "foreignKey": "CategorieId"
+      "foreignKey": "categorieId",
+      "options": {
+        "nestRemoting": true
+      }
     },
     "marque": {
       "type": "belongsTo",
       "model": "Marque",
-      "foreignKey": "MarqueId"
+      "foreignKey": "marqueId",
+      "options": {
+        "nestRemoting": true
+      }
     },
-    "image": {
-      "type": "belongsTo",
-      "model": "Image",
-      "foreignKey": "ImageId"
-    },
-    "paniers": {
-      "type": "hasMany",
-      "model": "Panier",
-      "foreignKey": "PanierId",
-      "through": "Article_Panier"
+    "commandes": {
+      "type": "hasAndBelongsToMany",
+      "model": "Commande",
+      "foreignKey": "articleId",
+      "options": {
+        "nestRemoting": true
+      }
     }
   },
   "acls": [],

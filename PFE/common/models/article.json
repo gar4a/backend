@@ -33,6 +33,58 @@
     "stockage": {
       "type": "array",
       "required": true
+    },
+    "ecran": {
+      "type": "array",
+      "required": true
+    },
+    "stock": {
+      "type": "array",
+      "required": true
+    },
+    "perfor": {
+      "type": "array",
+      "required": true
+    },
+    "audio": {
+      "type": "array",
+      "required": true
+    },
+    "batt": {
+      "type": "array",
+      "required": true
+    },
+    "affichage": {
+      "type": "array",
+      "required": true
+    },
+    "se": {
+      "type": "array",
+      "required": true
+    },
+    "photo": {
+      "type": "array",
+      "required": true
+    },
+    "reseau": {
+      "type": "array",
+      "required": true
+    },
+    "connec": {
+      "type": "array",
+      "required": true
+    },
+    "capteur": {
+      "type": "array",
+      "required": true
+    },
+    "poids": {
+      "type": "array",
+      "required": true
+    },
+    "divers": {
+      "type": "array",
+      "required": true
     }
   },
   "validations": [],
